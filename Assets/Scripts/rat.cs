@@ -22,6 +22,7 @@ public class rat : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("MoveRat", 0, change_direction_rate);
+		StartCoroutine(MouseSquee());
 	}
 	
 	// Update is called once per frame
@@ -318,4 +319,32 @@ public class rat : MonoBehaviour {
 			return true;
 		}
 	}
+
+	IEnumerator MouseSquee(){
+		float squee_wait = Random.Range (3, 7);
+
+		yield return new WaitForSeconds(squee_wait);
+
+		AudioSource audio = gameObject.GetComponent<AudioSource> ();
+		audio.Play ();
+		//GameObject fox_obj = GameObject.Find("Rabbit");
+
+		StartCoroutine(MouseSquee());
+
+		Light mouse_light = gameObject.GetComponent<Light> ();
+
+		mouse_light.intensity = 1.2f;
+		mouse_light.range = 8;
+		StartCoroutine (MouseHighlight());
+	}
+
+	IEnumerator MouseHighlight(){
+		yield return new WaitForSeconds(0.5f);
+
+		Light mouse_light = gameObject.GetComponent<Light> ();
+
+		mouse_light.intensity = 0f;
+		mouse_light.range = 0;
+	}
 }
+

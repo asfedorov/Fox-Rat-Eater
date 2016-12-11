@@ -178,9 +178,9 @@ public class player : MonoBehaviour {
 
 				kill_count++;
 
-//				if (kill_count % 5 == 0){
-//					SpawnRabbit();
-//				}
+				if (kill_count % 5 == 0){
+					SpawnRabbit();
+				}
 
 
 				int timer_bonus = 10;
@@ -195,8 +195,8 @@ public class player : MonoBehaviour {
 					score_bonus = 3;
 				}
 
-//				GameObject timer = GameObject.Find("Timer");
-//				timer.GetComponent<TimerScript>().timer += timer_bonus;
+				GameObject timer = GameObject.Find("TimeLeft");
+				timer.GetComponent<TimerScript>().timer += timer_bonus;
 
 				score += score_bonus;
 
@@ -204,27 +204,30 @@ public class player : MonoBehaviour {
 				score_text.text = score.ToString();
 
 			}
-//			RabbitScript rabbit = collider.gameObject.GetComponent<RabbitScript> ();
-//			if (rabbit != null) {
-//				Vector3 rabbit_pos = rabbit.gameObject.transform.position;
-//				Destroy (rabbit.gameObject);
-//
-//				var bloodTransform = Instantiate (bloodPrefab) as Transform;
-//				bloodTransform.localScale = new Vector3(1.1f, 1.1f, 1);
-//				bloodTransform.position = new Vector3( rabbit_pos.x, rabbit_pos.y, 5);
-//
-//				//kill_count++;
-//
-//				score += 5;
-//
-//				GameObject count_text = GameObject.Find("Count");
-//				count_text.GetComponent<TextMesh>().text = score.ToString();
-//
-//				int timer_bonus = 15;
-//
-//				GameObject timer = GameObject.Find("Timer");
-//				timer.GetComponent<TimerScript>().timer += timer_bonus;
-//			}
+			RabbitScript rabbit = collider.gameObject.GetComponent<RabbitScript> ();
+			if (rabbit != null) {
+				Vector3 rabbit_pos = rabbit.gameObject.transform.position;
+				Destroy (rabbit.gameObject);
+
+				GameObject background = GameObject.FindGameObjectWithTag ("FOREGROUND");
+				var bloodTransform = Instantiate (bloodPrefab) as Transform;
+
+				bloodTransform.parent = background.transform;
+				bloodTransform.localScale = new Vector3(1.1f, 1.1f, 1);
+				bloodTransform.position = new Vector3( rabbit_pos.x, rabbit_pos.y, -6);
+
+				//kill_count++;
+
+				score += 15;
+
+				Text score_text = GameObject.Find("Score").GetComponent<Text>();;
+				score_text.text = score.ToString();
+
+				int timer_bonus = 15;
+
+				GameObject timer = GameObject.Find("TimeLeft");
+				timer.GetComponent<TimerScript>().timer += timer_bonus;
+			}
 		}
 	}
 
@@ -249,14 +252,17 @@ public class player : MonoBehaviour {
 		return 0;
 	}
 
-//	private int SpawnRabbit(){
-//		float random_x = Random.Range (-5.0f, 5.0f);
-//		float random_y = Random.Range (-3.0f, 3.0f);
-//
-//		var rabbitTransform = Instantiate (rabbitPrefab) as Transform;
-//
-//		rabbitTransform.position = new Vector3 (random_x, random_y, 0);
-//
-//		return 0;
-//	}
+	private int SpawnRabbit(){
+		float random_x = Random.Range (-5.0f, 5.0f);
+		float random_y = Random.Range (-3.0f, 3.0f);
+
+		GameObject background = GameObject.FindGameObjectWithTag ("FOREGROUND");
+
+		var rabbitTransform = Instantiate (rabbitPrefab) as Transform;
+
+		rabbitTransform.position = new Vector3 (random_x, random_y, -6);
+		rabbitTransform.parent = background.transform;
+
+		return 0;
+	}
 }
