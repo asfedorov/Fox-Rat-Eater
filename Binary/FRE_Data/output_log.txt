@@ -1,0 +1,90 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 670 (ID=0x1189)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.057 seconds
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Public\Documents\Unity Projects\LD37 Fox Rat Eater\Binary\FRE_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.304484 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.704930 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 293.
+Total: 0.344993 ms (FindLiveObjects: 0.022845 ms CreateObjectMapping: 0.024169 ms MarkObjects: 0.282417 ms  DeleteObjects: 0.014898 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.094127 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 236.
+Total: 0.533050 ms (FindLiveObjects: 0.044034 ms CreateObjectMapping: 0.032446 ms MarkObjects: 0.445643 ms  DeleteObjects: 0.009601 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.509874 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 194.
+Total: 0.249639 ms (FindLiveObjects: 0.020196 ms CreateObjectMapping: 0.014898 ms MarkObjects: 0.199645 ms  DeleteObjects: 0.014236 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.369493 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.221497 ms (FindLiveObjects: 0.036750 ms CreateObjectMapping: 0.009601 ms MarkObjects: 0.167199 ms  DeleteObjects: 0.007615 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.838644 ms
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 3.243662 ms (FindLiveObjects: 0.027811 ms CreateObjectMapping: 0.026818 ms MarkObjects: 0.337378 ms  DeleteObjects: 2.850662 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SubmitScript+<get_scores>c__Iterator8.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SubmitScript+<get_scores>c__Iterator8.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.942605 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 236.
+Total: 0.245666 ms (FindLiveObjects: 0.023176 ms CreateObjectMapping: 0.011588 ms MarkObjects: 0.203618 ms  DeleteObjects: 0.006952 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.369824 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 293.
+Total: 0.267849 ms (FindLiveObjects: 0.017547 ms CreateObjectMapping: 0.012581 ms MarkObjects: 0.227457 ms  DeleteObjects: 0.009601 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.640654 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 236.
+Total: 0.303938 ms (FindLiveObjects: 0.023838 ms CreateObjectMapping: 0.013574 ms MarkObjects: 0.261559 ms  DeleteObjects: 0.004304 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2814 -> priority: 1 

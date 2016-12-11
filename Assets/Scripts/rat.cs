@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class rat : MonoBehaviour {
-	public Vector2 speed = new Vector2(2.0f,2.0f);
+	public Vector2 speed = new Vector2(1.5f,1.5f);
 	private Vector2 movement = new Vector2(0,0);
 	private Vector2 current_movement;
 	private int rotate_to;
@@ -249,7 +249,7 @@ public class rat : MonoBehaviour {
 			if(collider.isTrigger){
 				panic = false;
 				change_direction_rate = 0.3f;
-				speed = new Vector2(2f,2f);
+				speed = new Vector2(1.5f,1.5f);
 				//print ("FOX IS GONE!");
 			}		
 		}

@@ -135,6 +135,15 @@ public class RabbitScript : MonoBehaviour {
 		current_movement.y = 0;
 		time_to_jump = Random.Range(0.2f, 0.5f);
 		air_time = 0.5f;
+
+		Light rabbit_light = gameObject.GetComponent<Light> ();
+
+		rabbit_light.intensity = 1.6f;
+		rabbit_light.range = 8;
+
+		AudioSource audio = gameObject.GetComponent<AudioSource> ();
+		audio.Play ();
+
 		return 0;
 	}
 
@@ -203,5 +212,14 @@ public class RabbitScript : MonoBehaviour {
 		} else {
 			return true;
 		}
+	}
+
+	IEnumerator RabbitHighlight(){
+		yield return new WaitForSeconds(0.5f);
+
+		Light rabbit_light = gameObject.GetComponent<Light> ();
+
+		rabbit_light.intensity = 0f;
+		rabbit_light.range = 0;
 	}
 }

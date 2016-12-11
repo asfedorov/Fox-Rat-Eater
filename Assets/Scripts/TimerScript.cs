@@ -33,7 +33,9 @@ public class TimerScript : MonoBehaviour {
 //
 //			PlayerPrefs.SetInt("Score", score);
 //
-//			Application.LoadLevel("endgame");
+			score = GameObject.Find("Player").GetComponent<player>().score;
+			PlayerPrefs.SetInt("Player Score", score);
+			Application.LoadLevel("postgame");
 		}
 	}
 }
